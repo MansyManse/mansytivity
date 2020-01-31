@@ -106,7 +106,6 @@ body {
 #intro .text-background .text {
     opacity: 1;
     transform: translate(-8%, -50%) matrix(1, 0, 0, 1, 0, 0);
-    color: lightblue;
     text-shadow: 20px 20px 0 rgba(0, 0, 0, 0.2);
     font-size: 50vw;
     font-weight: 900;
@@ -124,8 +123,14 @@ body {
     background: darkgray;
 }
 
+#intro .text-background .text--1 {
+    color: #000;
+}
+
 #intro .text-background .text--2 {
     left: -100%;
+    color: darkgray;
+    text-shadow: 20px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 
