@@ -8,8 +8,10 @@
     </div>
     <div class="intro-header">
         <div class="intro-header-box">
-            <h1 class="intro-header-title"><i>Al Mansy Balangue</i> <span class="intro-header-title-mask"></span></h1>
-            <h2 class="intro-header-subtitle"><i>UI/UX Developer</i> <span class="intro-header-subtitle-mask"></span>
+            <h1 class="intro-header-title"><i><?php echo get_option( 'about_name' ); ?></i> <span
+                    class="intro-header-title-mask"></span></h1>
+            <h2 class="intro-header-subtitle"><i><?php echo get_option( 'about_roles' ); ?></i> <span
+                    class="intro-header-subtitle-mask"></span>
             </h2>
         </div>
     </div>
