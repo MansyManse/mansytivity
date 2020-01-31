@@ -1,0 +1,268 @@
+/* For Responsive Typography */
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    height: 100%;
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        font-size: 16px;
+    }
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        font-size: 16px;
+    }
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        font-size: 16px;
+    }
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        font-size: 18px;
+    }
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        font-size: 20px;
+    }
+}
+
+
+/* #intro section styles */
+
+
+/* 
+#intro {
+    padding: 0;
+    position: relative;
+    background: #171616;
+    z-index: 9;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    background: #f9f9f9;
+    min-height: 500px;
+} */
+
+#intro {
+    padding: 0;
+    z-index: 9;
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background: #f9f9f9;
+    min-height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro .text-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: lightgray;
+}
+
+#intro .text-background>div {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+#intro .is-home .text-background .text {
+    color: #232323;
+    text-shadow: 20px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#intro .text-background .text {
+    opacity: 1;
+    transform: translate(-8%, -50%) matrix(1, 0, 0, 1, 0, 0);
+    color: lightblue;
+    text-shadow: 20px 20px 0 rgba(0, 0, 0, 0.2);
+    font-size: 50vw;
+    font-weight: 900;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-10%, -50%) rotate(90deg);
+    transform: translate(-10%, -50%) rotate(90deg);
+    will-change: transform, opacity;
+    opacity: 1;
+    transform: translate(-8%, -50%) matrix(1, 0, 0, 1, 0, 0);
+}
+
+#intro .text-background .text--2-container {
+    background: darkgray;
+}
+
+#intro .text-background .text--2 {
+    left: -100%;
+}
+
+
+/* #intro .intro-header {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    pointer-events: none;
+} */
+
+#intro .intro-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    pointer-events: none;
+}
+
+#intro .intro-header .intro-header-box {
+    pointer-events: visible;
+    position: relative;
+    z-index: 100;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#intro .intro-header .intro-header-title,
+#intro .intro-header .intro-header-subtitle {
+    text-align: center;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+    padding: 7px 20px;
+    color: #f9f9f9;
+    color: black;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 100;
+    margin: 0;
+    will-change: transform;
+    font-size: 1.5rem;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#intro .intro-header .intro-header-title {
+    margin-bottom: 5px;
+}
+
+#intro .intro-header .intro-header-subtitle {
+    font-size: 1.2rem;
+}
+
+#intro .intro-header i {
+    margin: 0 auto;
+    display: inline-block;
+    font-style: normal;
+    position: relative;
+    z-index: 2;
+    -webkit-transform: translateY(150%);
+    transform: translateY(150%);
+    will-change: transform;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#intro .intro-header span {
+    will-change: transform;
+    -webkit-transform: translateX(-101%);
+    transform: translateX(-101%);
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f9f9f9;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#intro .intro-header-line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    overflow: hidden;
+    z-index: 99;
+}
+
+#intro .intro-header-line>div {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    will-change: transform;
+    transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+}
