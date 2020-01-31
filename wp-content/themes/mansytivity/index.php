@@ -19,4 +19,5 @@
         <div id="intro-header-line-loop"></div>
     </div>
 </section>
+<?php include 'about-section.php' ?>
 <?php get_footer(); ?>
