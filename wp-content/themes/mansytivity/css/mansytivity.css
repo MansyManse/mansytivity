@@ -89,7 +89,7 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    background: darkgray;
+    background: #fff;
 }
 
 #intro .text-background>div {
@@ -114,9 +114,10 @@ body {
     transform: translate(-8%, -50%) matrix(1, 0, 0, 1, 0, 0);
 }
 
-#intro .text-background .text--1-container {
+
+/* #intro .text-background .text--1-container {
     background: lightgray;
-}
+} */
 
 #intro .text-background .text--2-container {
     background: darkgray;
@@ -269,6 +270,25 @@ body {
     transform: translateY(-100%);
     will-change: transform;
     transform: translate(0%, 100%) matrix(1, 0, 0, 1, 0, 0);
+}
+
+
+/* About Section */
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 500px;
+    background: white;
+    align-items: center;
+}
+
+#about-content {
+    min-height: 200px;
+    min-width: 200px;
+    background: #000;
+    color: white;
 }
 
 

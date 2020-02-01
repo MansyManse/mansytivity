@@ -56,6 +56,11 @@ body {
     width: calc(100%);
 }
 
+.offcanvas-open .ss-container:hover .ss-scroll,
+.offcanvas-open .ss-container:active .ss-scroll {
+    opacity: 0 !important;
+}
+
 .offcanvas-open #offcanvas-navicon:before {
     transform: translate3d(0, 8px, 0) rotate(135deg);
 }
