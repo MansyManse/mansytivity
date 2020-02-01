@@ -433,6 +433,7 @@ body {
 
 #skill {
     display: flex;
+    background-color: #7ca9cc;
     background-image: url(http://localhost/mansytivity/wp-content/uploads/2020/02/newyork-by-mansy-scaled.jpg);
     background-size: cover;
     background-attachment: fixed;
