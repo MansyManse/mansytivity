@@ -98,11 +98,6 @@ body {
     position: relative;
 }
 
-#intro .is-home .text-background .text {
-    color: #232323;
-    text-shadow: 20px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
 #intro .text-background .text {
     opacity: 1;
     transform: translate(-8%, -50%) matrix(1, 0, 0, 1, 0, 0);
@@ -289,4 +284,18 @@ body {
 
 .intro-header-line {
     animation: createBox 2s;
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    #intro .text-background .text {
+        text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+    }
 }
