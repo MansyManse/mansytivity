@@ -248,12 +248,12 @@ body {
 
 #intro .intro-header-line {
     display: block;
-    width: 1px;
+    width: 5px;
     height: 100%;
     background: #fff;
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 49.8%;
     overflow: hidden;
     z-index: 99;
 }
