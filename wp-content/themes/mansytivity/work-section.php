@@ -25,7 +25,7 @@
                     </div>
                     <div class="work-role work-data">Onsite Coordinator | Frontend Technologies Consultant
                     </div>
-                    <div class="work-date work-data">April 2012 - February 2017 (5 years)
+                    <div class="work-date work-data">Nov 2014 - May 2015 | Dec 2015 - June 2016 (1 year)
                     </div>
                 </div>
             </div>

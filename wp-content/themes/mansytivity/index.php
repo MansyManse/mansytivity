@@ -21,4 +21,5 @@
 </section>
 <?php include 'about-section.php' ?>
 <?php include 'work-section.php' ?>
+<?php include 'skill-section.php' ?>
 <?php get_footer(); ?>

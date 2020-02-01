@@ -7,9 +7,10 @@ function mansytivity_script_enqueue() {
     wp_enqueue_style( 'normalizestyle', get_template_directory_uri() . '/css/normalize.css', array(), '8.0.1', 'all' );
     wp_enqueue_style( 'simplescrollbar', get_template_directory_uri() . '/css/simple-scrollbar.css', array(), '1.0.0', 'all' );
     wp_enqueue_style( 'offcanvass', get_template_directory_uri() . '/css/offcanvas.css', array(), '1.0.0', 'all' );
+    wp_enqueue_style( 'googlewebfonts', 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Wire+One|Advent+Pro ' );
     wp_enqueue_style( 'animationsstyle', get_template_directory_uri() . '/css/animations.css', array(), '1.0.0', 'all' );
     wp_enqueue_style( 'customstyle', get_template_directory_uri() . '/css/mansytivity.css', array(), '1.0.0', 'all' );
-    wp_enqueue_style( 'googlewebfonts', 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Wire+One|Advent+Pro ' );
+    
     // Include the JS files in the footer
     wp_enqueue_script('jqueryscript', get_template_directory_uri() . '/js/jquery-3.4.1.min.js', array(), '3.4.1', true);
     wp_enqueue_script('simplescrollbarcript', get_template_directory_uri() . '/js/simple-scrollbar.js', array(), '1.0.0', true);
