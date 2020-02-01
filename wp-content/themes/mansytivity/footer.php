@@ -10,6 +10,7 @@
             <span class="copyright">© 2020 Mansytivity | Al Mansy Balangue</span>
         </div>
     </footer>
+    <?php wp_footer(); ?>
     </body>
 
     </html>
