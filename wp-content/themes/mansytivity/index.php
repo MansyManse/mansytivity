@@ -20,4 +20,5 @@
     </div>
 </section>
 <?php include 'about-section.php' ?>
+<?php include 'work-section.php' ?>
 <?php get_footer(); ?>
