@@ -1,46 +1,44 @@
 <section id="work">
     <div id="work-content">
         <div class="work-content-left">
-            <h2>Work Experiences</h2>
+            <h2><?php echo get_option( 'client_work' ); ?></h2>
 
             <div class="work-1">
-                <h3>Pointwest Technologies Inc</h3>
+                <h3><?php echo get_option( 'client_work1_company' ); ?></h3>
                 <div class="work-odd">
-                    <div class="work-address work-data">Citibank Center, Paseo de Roxas, Makati, 1226 Metro Manila,
-                        Philippines
+                    <div class="work-address work-data"><?php echo get_option( 'client_work1_location' ); ?>
                     </div>
-                    <div class="work-role work-data">Associate Software Engineer to Senior Software Engineer
+                    <div class="work-role work-data"><?php echo get_option( 'client_work1_role1' ); ?>
                     </div>
-                    <div class="work-role work-data">Promoted to Team Lead and Project Lead
+                    <div class="work-role work-data"><?php echo get_option( 'client_work1_role2' ); ?>
                     </div>
-                    <div class="work-date work-data">April 2012 - February 2017 (5 years)
+                    <div class="work-date work-data"><?php echo get_option( 'client_work1_duration' ); ?>
                     </div>
                 </div>
             </div>
             <div class="separator">&nbsp;</div>
             <div class="work-even">
-                <h3>Pointwest Technologies Inc - US Client (Minnesota)</h3>
+                <h3><?php echo get_option( 'client_work2_company' ); ?></h3>
                 <div class="work-info">
-                    <div class="work-address work-data">Minnetonka, Minnesota, United States
+                    <div class="work-address work-data"><?php echo get_option( 'client_work2_location' ); ?>
                     </div>
-                    <div class="work-role work-data">Onsite Coordinator | Frontend Technologies Consultant
+                    <div class="work-role work-data"><?php echo get_option( 'client_work2_role1' ); ?>
                     </div>
-                    <div class="work-date work-data">Nov 2014 - May 2015 | Dec 2015 - June 2016 (1 year)
+                    <div class="work-date work-data"><?php echo get_option( 'client_work2_duration' ); ?>
                     </div>
                 </div>
             </div>
             <div class="separator">&nbsp;</div>
             <div class="work-odd">
-                <h3>MakatiSoft Inc aka Swapoolabs Inc</h3>
+                <h3><?php echo get_option( 'client_work3_company' ); ?></h3>
                 <div class="work-info">
-                    <div class="work-address work-data">24th Floor SM Aura Building, BGC, Metro Manila,
-                        Philippines
+                    <div class="work-address work-data"><?php echo get_option( 'client_work3_location' ); ?>
                     </div>
-                    <div class="work-role work-data">UIUX Designer / Developer
+                    <div class="work-role work-data"><?php echo get_option( 'client_work3_role1' ); ?>
                     </div>
-                    <div class="work-role work-data">Team Leam | Scrum Master
+                    <div class="work-role work-data"><?php echo get_option( 'client_work3_role2' ); ?>
                     </div>
-                    <div class="work-date work-data">April 2017 - April 2019 (2 years)
+                    <div class="work-date work-data"><?php echo get_option( 'client_work3_duration' ); ?>
                     </div>
                 </div>
             </div>

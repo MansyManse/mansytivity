@@ -1,13 +1,16 @@
     <footer id="contact">
         <div id="socialmedia">
-            <a href="https://www.behance.net/mansyfaris"><i class="fab fa-behance fa-3x" title="Behance"></i></a>
-            <a href="https://www.linkedin.com/in/almansybalangue/"><i class="fab fa-linkedin-in fa-3x"
+            <a href="<?php echo get_option( 'client_behance_url' ); ?>"><i class="fab fa-behance fa-3x"
+                    title="Behance"></i></a>
+            <a href="<?php echo get_option( 'client_linkedin_url' ); ?>"><i class="fab fa-linkedin-in fa-3x"
                     title="LinkedIn"></i></a>
-            <a href="https://www.instagram.com/mansymanse/"><i class="fab fa-instagram fa-3x" title="Instagram"></i></a>
-            <a href="https://www.facebook.com/mansymanse"><i class="fab fa-facebook-f fa-3x" title="Facebook"></i></a>
+            <a href="<?php echo get_option( 'client_instagram_url' ); ?>"><i class="fab fa-instagram fa-3x"
+                    title="Instagram"></i></a>
+            <a href="<?php echo get_option( 'client_github_url' ); ?>"><i class="fab fa-github fa-3x"
+                    title="Github"></i></a>
         </div>
         <div id="copyright-wrapper">
-            <span class="copyright">© 2020 Mansytivity | Al Mansy Balangue</span>
+            <span class="copyright"><?php echo get_option( 'client_copyright' ); ?></span>
         </div>
     </footer>
     <?php wp_footer(); ?>

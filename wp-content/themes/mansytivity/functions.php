@@ -39,7 +39,7 @@ add_action('init', 'mansytivity_theme_setup');
 function h5bs_about_options() {
 
     if ( count($_POST) > 0 && isset($_POST['h5bs_about_settings']) ) {
-        $options = array (  'name', 'roles', 'roles_2', 'country', 'quote' );
+        $options = array (  'name', 'roles', 'skill1', 'skill2', 'skill3', 'skill4', 'skill5' );
 
         foreach ( $options as $opt ) {
             delete_option ( 'about_'.$opt, $_POST[$opt] );
@@ -70,18 +70,28 @@ function h5bs_about_settings() { ?>
                         class="regular-text" /></td>
             </tr>
             <tr>
-                <th><label for="roles_2">Roles 2</label></th>
-                <td><input type="text" name="roles_2" id="roles_2" value="<?php echo get_option( 'about_roles_2' ); ?>"
+                <th><label for="skill1">Skill 1</label></th>
+                <td><input type="text" name="skill1" id="skill1" value="<?php echo get_option( 'about_skill1' ); ?>"
                         class="regular-text" /></td>
             </tr>
             <tr>
-                <th><label for="country">Country</label></th>
-                <td><input type="text" name="country" id="country" value="<?php echo get_option( 'about_country' ); ?>"
+                <th><label for="skill2">Skill 2</label></th>
+                <td><input type="text" name="skill2" id="skill2" value="<?php echo get_option( 'about_skill2' ); ?>"
                         class="regular-text" /></td>
             </tr>
             <tr>
-                <th><label for="quote">Quote</label></th>
-                <td><input type="text" name="quote" id="quote" value="<?php echo get_option( 'about_quote' ); ?>"
+                <th><label for="skill3">Skill 3</label></th>
+                <td><input type="text" name="skill3" id="skill3" value="<?php echo get_option( 'about_skill3' ); ?>"
+                        class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="skill4">Skill 4</label></th>
+                <td><input type="text" name="skill4" id="skill4" value="<?php echo get_option( 'about_skill4' ); ?>"
+                        class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="skill5">Skill 5</label></th>
+                <td><input type="text" name="skill5" id="skill5" value="<?php echo get_option( 'about_skill5' ); ?>"
                         class="regular-text" /></td>
             </tr>
 
@@ -99,7 +109,11 @@ function h5bs_about_settings() { ?>
 function h5bs_client_options() {
 
     if ( count($_POST) > 0 && isset($_POST['h5bs_client_settings']) ) {
-        $options = array ( 'logo_url', 'logo_alt_text', 'google_analytics', 'twitter_url', 'behance_url', 'facebook_url', 'google_url', 'instagram_url', 'pinterest_url', 'linkedin_url', 'youtube_url', 'email', 'phone', 'phone_2', 'fax', 'address', 'address_2', 'city', 'state', 'zip_code' );
+        $options = array ( 'logo_url', 'logo_alt_text', 'google_analytics', 'twitter_url', 'behance_url', 'facebook_url', 'google_url', 'instagram_url', 'pinterest_url', 'linkedin_url', 'youtube_url', 'github_url', 'copyright', 'email', 'phone', 'phone_2', 'fax', 'address', 'address_2',
+         'city', 'state', 'zip_code', 'school', 'certification', 'award', 'scholarship',
+        'work', 'work1_company', 'work1_location', 'work1_role1', 'work1_role2', 'work1_duration',
+        'work2_company', 'work2_location', 'work2_role1', 'work2_role2', 'work2_duration', 
+        'work3_company', 'work3_location', 'work3_role1', 'work3_role2', 'work3_duration'   );
 
         foreach ( $options as $opt ) {
             delete_option ( 'client_'.$opt, $_POST[$opt] );
@@ -151,7 +165,7 @@ function h5bs_client_settings() { ?>
             </tr>
             <tr>
                 <th><label for="behance_url">Behance URL</label></th>
-                <td><input type="text" name="behance_url" id="twitter_url"
+                <td><input type="text" name="behance_url" id="behance_url"
                         value="<?php echo get_option( 'client_behance_url' ); ?>" class="regular-text" /></td>
             </tr>
             <tr>
@@ -183,6 +197,16 @@ function h5bs_client_settings() { ?>
                 <th><label for="youtube_url">YouTube URL</label></th>
                 <td><input type="text" name="youtube_url" id="youtube_url"
                         value="<?php echo get_option( 'client_youtube_url' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="github_url">Github URL</label></th>
+                <td><input type="text" name="github_url" id="github_url"
+                        value="<?php echo get_option( 'client_github_url' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="copyright">Copyright</label></th>
+                <td><input type="text" name="copyright" id="copyright"
+                        value="<?php echo get_option( 'client_copyright' ); ?>" class="regular-text" /></td>
             </tr>
         </table>
         <p class="submit">
@@ -237,6 +261,114 @@ function h5bs_client_settings() { ?>
                 <th><label for="zip_code">Zip Code</label></th>
                 <td><input type="text" name="zip_code" id="zip_code"
                         value="<?php echo get_option( 'client_zip_code' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="school">School</label></th>
+                <td><input type="text" name="school" id="school" value="<?php echo get_option( 'client_school' ); ?>"
+                        class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="certification">Certification</label></th>
+                <td><input type="text" name="certification" id="certification"
+                        value="<?php echo get_option( 'client_certification' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="award">Award</label></th>
+                <td><input type="text" name="award" id="award" value="<?php echo get_option( 'client_award' ); ?>"
+                        class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="scholarship">Scholarship</label></th>
+                <td><input type="text" name="scholarship" id="scholarship"
+                        value="<?php echo get_option( 'client_scholarship' ); ?>" class="regular-text" /></td>
+            </tr>
+        </table>
+        <p class="submit">
+            <input type="submit" name="submit" id="submit" class="button-primary" value="Save Changes" />
+            <input type="hidden" name="h5bs_client_settings" value="save" style="display:none;" />
+        </p>
+
+        <h3>Work Experiences Settings</h3>
+        <table class="form-table">
+            <tr>
+                <th><label for="work">Work Experiences</label></th>
+                <td><input type="text" name="work" id="work" value="<?php echo get_option( 'client_work' ); ?>"
+                        class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="work1_company">Work 1 Company</label></th>
+                <td><input type="text" name="work1_company" id="work1_company"
+                        value="<?php echo get_option( 'client_work1_company' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="work1_location">Work 1 Location</label></th>
+                <td><input type="text" name="work1_location" id="work1_location"
+                        value="<?php echo get_option( 'client_work1_location' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="work1_role1">Work 1 Role 1</label></th>
+                <td><input type="text" name="work1_role1" id="work1_role1"
+                        value="<?php echo get_option( 'client_work1_role1' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="work1_role2">Work 1 Role 2</label></th>
+                <td><input type="text" name="work1_role2" id="work1_role2"
+                        value="<?php echo get_option( 'client_work1_role2' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="work1_duration">Work 1 Duration</label></th>
+                <td><input type="text" name="work1_duration" id="work1_duration"
+                        value="<?php echo get_option( 'client_work1_duration' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="work2_company">Work 2 Company</label></th>
+                <td><input type="text" name="work2_company" id="work2_company"
+                        value="<?php echo get_option( 'client_work2_company' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="work2_location">Work 2 Location</label></th>
+                <td><input type="text" name="work2_location" id="work2_location"
+                        value="<?php echo get_option( 'client_work2_location' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="work2_role1">Work 2 Role 1</label></th>
+                <td><input type="text" name="work2_role1" id="work2_role1"
+                        value="<?php echo get_option( 'client_work2_role1' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="work2_role2">Work 2 Role 2</label></th>
+                <td><input type="text" name="work2_role2" id="work2_role2"
+                        value="<?php echo get_option( 'client_work2_role2' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="work2_duration">Work 2 Duration</label></th>
+                <td><input type="text" name="work2_duration" id="work2_duration"
+                        value="<?php echo get_option( 'client_work2_duration' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="work3_company">Work 3 Company</label></th>
+                <td><input type="text" name="work3_company" id="work3_company"
+                        value="<?php echo get_option( 'client_work3_company' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="work3_location">Work 3 Location</label></th>
+                <td><input type="text" name="work3_location" id="work3_location"
+                        value="<?php echo get_option( 'client_work3_location' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="work3_role1">Work 3 Role 1</label></th>
+                <td><input type="text" name="work3_role1" id="work3_role1"
+                        value="<?php echo get_option( 'client_work3_role1' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="work3_role2">Work 3 Role 2</label></th>
+                <td><input type="text" name="work3_role2" id="work3_role2"
+                        value="<?php echo get_option( 'client_work3_role2' ); ?>" class="regular-text" /></td>
+            </tr>
+            <tr>
+                <th><label for="work3_duration">Work 3 Duration</label></th>
+                <td><input type="text" name="work3_duration" id="work3_duration"
+                        value="<?php echo get_option( 'client_work2_duration' ); ?>" class="regular-text" /></td>
             </tr>
         </table>
         <p class="submit">
