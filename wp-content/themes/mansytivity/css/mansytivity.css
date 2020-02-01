@@ -378,17 +378,18 @@ body {
 }
 
 .cloud-container img {
-    width: 70%;
+    width: 55%;
 }
 
-.cloud-container:first-of-type {
+
+/* .cloud-container:first-of-type {
     align-self: flex-start;
 }
 
 .cloud-container:nth-of-type(2) {
     align-self: center;
     display: flex;
-}
+} */
 
 .cloud-container:nth-of-type(2) img {
     width: 50%;
