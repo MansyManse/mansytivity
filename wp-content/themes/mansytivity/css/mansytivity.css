@@ -432,11 +432,20 @@ body {
 /* Skill Section */
 
 #skill {
+    content: "";
     display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
     background-color: #7ca9cc;
-    background-image: url(http://localhost/mansytivity/wp-content/uploads/2020/02/newyork-by-mansy-scaled.jpg);
+    background: url(http://localhost/mansytivity/wp-content/uploads/2020/02/newyork-by-mansy-scaled.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-attachment: fixed;
     min-height: 500px;
     flex-flow: column;
     justify-content: center;
