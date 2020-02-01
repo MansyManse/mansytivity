@@ -285,12 +285,57 @@ body {
 }
 
 #about-content {
-    min-height: 200px;
-    min-width: 200px;
-    background: #000;
-    color: white;
+    background: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 0 #000;
+    /* animation: pulseEffect 4s infinite; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    padding: 2rem;
+}
+
+.about-content-left,
+.about-content-right {
+    display: flex;
+    flex-grow: 1;
+    padding: 2rem;
+    position: relative;
+}
+
+.about-content-left .avatar-photo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 100%;
+    border: 5px solid white;
+    width: 25%;
     box-shadow: 0 0 0 #000;
     animation: pulseEffect 4s infinite;
+}
+
+.about-content-right {
+    flex-flow: column;
+    display: flex;
+    font-family: "Advent Pro", sans-serif;
+}
+
+.about-content-right .data {
+    align-self: flex-start;
+}
+
+.about-content-right .education {
+    align-self: flex-end;
+}
+
+.about-content-left .avatar-nametag {
+    width: 80%;
+}
+
+.separator {
+    border-top: 1px solid black;
+    margin: 2rem 0;
 }
 
 
@@ -319,5 +364,8 @@ body {
 @media (min-width: 320px) and (max-width: 1024px) {
     #intro .text-background .text {
         text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+    }
+    #about-content {
+        flex-flow: column;
     }
 }
