@@ -26,3 +26,15 @@
         transform: scale(1);
     }
 }
+
+@keyframes pulseEffect {
+    0% {
+        box-shadow: 0 0 0 0 #000;
+    }
+    30% {
+        box-shadow: 0 0 0 30px transparent;
+    }
+    100% {
+        box-shadow: 0 0 0 0 transparent;
+    }
+}

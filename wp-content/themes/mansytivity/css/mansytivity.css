@@ -242,7 +242,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: #f9f9f9;
+    background: #ffffff;
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
@@ -289,6 +289,8 @@ body {
     min-width: 200px;
     background: #000;
     color: white;
+    box-shadow: 0 0 0 #000;
+    animation: pulseEffect 4s infinite;
 }
 
 
